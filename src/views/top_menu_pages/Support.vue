@@ -1,0 +1,10 @@
+<template>
+  <div class="showcase">
+    <h1>This is support page</h1>
+  </div>
+</template>
+<script>
+export default {
+  name: 'Support',
+}
+</script>
