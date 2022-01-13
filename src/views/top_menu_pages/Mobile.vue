@@ -1,5 +1,5 @@
 <template>
-  <div class="showcase">
+  <div class="mobile">
     <h1>This is mobile page</h1>
   </div>
 </template>

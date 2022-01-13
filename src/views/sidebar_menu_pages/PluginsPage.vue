@@ -1,10 +1,10 @@
 <template>
   <div class="plugins">
-    <h1>This is plugins page</h1>
+    <h1>This is dashboard plugins page</h1>
   </div>
 </template>
 <script>
 export default {
-  name: 'Plugins',
+  name: 'PluginsPage',
 }
 </script>

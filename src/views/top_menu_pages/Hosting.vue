@@ -1,5 +1,5 @@
 <template>
-  <div class="showcase">
+  <div class="hosting">
     <h1>This is hosting page</h1>
   </div>
 </template>
