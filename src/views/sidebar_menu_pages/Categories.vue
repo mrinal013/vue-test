@@ -5,7 +5,17 @@
 </template>
 
 <script>
-export default {
+const Categories = {
   name: 'Categories',
+  registerRoutes: (router) => {
+    router.addRoute({
+      path: '/categories',
+      component: Categories
+    });
+  },
+  created() {
+
+  }
 }
+export default Categories
 </script>

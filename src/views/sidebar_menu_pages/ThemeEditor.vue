@@ -5,7 +5,17 @@
 </template>
 
 <script>
-export default {
+const ThemeEditor = {
   name: 'ThemeEditor',
+  registerRoutes: (router) => {
+    router.addRoute({
+      path: '/theme-editor',
+      component: ThemeEditor
+    });
+  },
+  created() {
+
+  }
 }
+export default ThemeEditor
 </script>

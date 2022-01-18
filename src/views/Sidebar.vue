@@ -204,7 +204,7 @@
         <div class="accordion-body">
           <ul class="list-group">
             <li class="list-group-item">
-              <router-link to="/general" class="nav-link">General</router-link>
+              <router-link :to="{path:'/general', component: require('./sidebar_menu_pages/General')}" class="nav-link" @click="generalNavigation">General</router-link>
             </li>
             <li class="list-group-item">
               <router-link to="/writting" class="nav-link">Writting</router-link>
@@ -229,10 +229,26 @@
       </div>
     </div>
   </div>
+<!--  <div v-for="(navItem, index) in getNavigation" :key="index">-->
+<!--  <div class="accordion-item">-->
+<!--    <h2 class="accordion-header" id="`heading${navItem.name}`">-->
+<!--      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="`#collapse${navItem.name}`" aria-expanded="true" aria-controls="`collapse${navItem.name}`">{{navItem.name}}</button>-->
+<!--    </h2>-->
+<!--  </div>-->
+<!--    {{navItem.name}}-->
+<!--  </div>-->
 </template>
 
 <script>
+
+import navigation from "/navigation.json";
+
 export default {
-  name: 'Sidebar'
+  name: 'Sidebar',
+computed: {
+    getNavigation() {
+      return navigation.navigation;
+    }
+}
 }
 </script>

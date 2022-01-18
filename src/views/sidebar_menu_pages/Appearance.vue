@@ -5,7 +5,17 @@
 </template>
 
 <script>
-export default {
+const Appearance = {
   name: 'Appearance',
+  registerRoutes: (router) => {
+    router.addRoute({
+      path: '/appearance',
+      component: Appearance
+    });
+  },
+  created() {
+
+  }
 }
+export default Appearance
 </script>

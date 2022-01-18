@@ -5,7 +5,17 @@
 </template>
 
 <script>
-export default {
+const Tools = {
   name: 'Tools',
+  registerRoutes: (router) => {
+    router.addRoute({
+      path: '/tools',
+      component: Tools
+    });
+  },
+  created() {
+
+  }
 }
+export default Tools
 </script>

@@ -5,7 +5,17 @@
 </template>
 
 <script>
-export default {
+const Comments = {
   name: 'Comments',
+  registerRoutes: (router) => {
+    router.addRoute({
+      path: '/comments',
+      component: Comments
+    });
+  },
+  created() {
+
+  }
 }
+export default Comments
 </script>

@@ -5,7 +5,17 @@
 </template>
 
 <script>
-export default {
+const Menus = {
   name: 'Menus',
+  registerRoutes: (router) => {
+    router.addRoute({
+      path: '/menus',
+      component: Menus
+    });
+  },
+  created() {
+
+  }
 }
+export default Menus
 </script>

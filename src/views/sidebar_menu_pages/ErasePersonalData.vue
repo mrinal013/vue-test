@@ -5,7 +5,17 @@
 </template>
 
 <script>
-export default {
+const ErasePersonalData = {
   name: 'ErasePersonalData',
+  registerRoutes: (router) => {
+    router.addRoute({
+      path: '/erase-personal-data',
+      component: ErasePersonalData
+    });
+  },
+  created() {
+
+  }
 }
+export default ErasePersonalData
 </script>

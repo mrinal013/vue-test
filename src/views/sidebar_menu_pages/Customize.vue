@@ -5,7 +5,17 @@
 </template>
 
 <script>
-export default {
+const Customize = {
   name: 'Customize',
+  registerRoutes: (router) => {
+    router.addRoute({
+      path: '/customize',
+      component: Customize
+    });
+  },
+  created() {
+
+  }
 }
+export default Customize
 </script>

@@ -5,7 +5,17 @@
 </template>
 
 <script>
-export default {
+const SiteHealth = {
   name: 'SiteHealth',
+  registerRoutes: (router) => {
+    router.addRoute({
+      path: '/site-health',
+      component: SiteHealth
+    });
+  },
+  created() {
+
+  }
 }
+export default SiteHealth
 </script>

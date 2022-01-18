@@ -5,7 +5,17 @@
 </template>
 
 <script>
-export default {
+const Permalinks = {
   name: 'Permalinks',
+  registerRoutes: (router) => {
+    router.addRoute({
+      path: '/permalinks',
+      component: Permalinks
+    });
+  },
+  created() {
+
+  }
 }
+export default Permalinks
 </script>

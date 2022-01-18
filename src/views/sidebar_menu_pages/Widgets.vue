@@ -5,7 +5,17 @@
 </template>
 
 <script>
-export default {
+const Widgets = {
   name: 'Widgets',
+  registerRoutes: (router) => {
+    router.addRoute({
+      path: '/widgets',
+      component: Widgets
+    });
+  },
+  created() {
+
+  }
 }
+export default Widgets
 </script>

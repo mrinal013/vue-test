@@ -5,7 +5,17 @@
 </template>
 
 <script>
-export default {
+const DashboardThemes = {
   name: 'DashboardThemes',
+  registerRoutes: (router) => {
+    router.addRoute({
+      path: '/dashboard-themes',
+      component: DashboardThemes
+    });
+  },
+  created() {
+
+  }
 }
+export default DashboardThemes
 </script>

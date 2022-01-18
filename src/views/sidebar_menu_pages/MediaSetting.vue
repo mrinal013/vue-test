@@ -5,7 +5,17 @@
 </template>
 
 <script>
-export default {
+const MediaSetting = {
   name: 'MediaSetting',
+  registerRoutes: (router) => {
+    router.addRoute({
+      path: '/media-setting',
+      component: MediaSetting
+    });
+  },
+  created() {
+
+  }
 }
+export default MediaSetting
 </script>

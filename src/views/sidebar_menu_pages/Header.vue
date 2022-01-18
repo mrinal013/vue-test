@@ -5,7 +5,17 @@
 </template>
 
 <script>
-export default {
+const Header = {
   name: 'Header',
+  registerRoutes: (router) => {
+    router.addRoute({
+      path: '/header',
+      component: Header
+    });
+  },
+  created() {
+
+  }
 }
+export default Header
 </script>

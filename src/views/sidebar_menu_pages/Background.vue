@@ -5,7 +5,17 @@
 </template>
 
 <script>
-export default {
+const Background = {
   name: 'Background',
+  registerRoutes: (router) => {
+    router.addRoute({
+      path: '/background',
+      component: Background
+    });
+  },
+  created() {
+
+  }
 }
+export default Background
 </script>

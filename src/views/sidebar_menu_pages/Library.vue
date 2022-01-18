@@ -5,7 +5,17 @@
 </template>
 
 <script>
-export default {
+const Library = {
   name: 'Library',
+  registerRoutes: (router) => {
+    router.addRoute({
+      path: '/library',
+      component: Library
+    });
+  },
+  created() {
+
+  }
 }
+export default Library
 </script>

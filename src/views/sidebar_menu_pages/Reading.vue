@@ -5,7 +5,17 @@
 </template>
 
 <script>
-export default {
+const Reading = {
   name: 'Reading',
+  registerRoutes: (router) => {
+    router.addRoute({
+      path: '/reading',
+      component: Reading
+    });
+  },
+  created() {
+
+  }
 }
+export default Reading
 </script>

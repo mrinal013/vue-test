@@ -5,7 +5,17 @@
 </template>
 
 <script>
-export default {
+const AddMedia = {
   name: 'AddMedia',
+  registerRoutes: (router) => {
+    router.addRoute({
+      path: '/add-media',
+      component: AddMedia
+    });
+  },
+  created() {
+
+  }
 }
+export default AddMedia
 </script>

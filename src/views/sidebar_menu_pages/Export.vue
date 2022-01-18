@@ -5,7 +5,17 @@
 </template>
 
 <script>
-export default {
+const Export = {
   name: 'Export',
+  registerRoutes: (router) => {
+    router.addRoute({
+      path: '/export',
+      component: Export
+    });
+  },
+  created() {
+
+  }
 }
+export default Export
 </script>

@@ -5,7 +5,17 @@
 </template>
 
 <script>
-export default {
+const Tags = {
   name: 'Tags',
+  registerRoutes: (router) => {
+    router.addRoute({
+      path: '/tags',
+      component: Tags
+    });
+  },
+  created() {
+
+  }
 }
+export default Tags
 </script>
