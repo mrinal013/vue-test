@@ -1,7 +1,4 @@
-// import  Vue from 'vue'
 import  { createRouter, createWebHashHistory  } from 'vue-router'
-// Vue.use(VueRouter);
-/* Topbar menus */
 import Home from '../views/Home.vue'
 import Showcase from '../views/top_menu_pages/Showcase.vue'
 import Learn from '../views/top_menu_pages/Learn.vue'
