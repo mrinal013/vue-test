@@ -9,7 +9,7 @@
       <Checkbox/>
       <CheckboxOutput/>
     </div>
-    <Switch/>
+    <Switch label-enable-text="hello switch" label-disable-text="light turn off"/>
   </div>
 </template>
 

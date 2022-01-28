@@ -3,7 +3,7 @@
     <span v-if="isActive" class="toggle__label">{{ enableText }}</span>
     <span v-if="! isActive" class="toggle__label">{{ disabledText }}</span>
 
-    <input type="checkbox" :disabled="disabled" :id="id + '_button'" v-model="checkedValue">
+    <input type="checkbox" :id="id + '_button'" v-model="checkedValue">
     <span class="toggle__switch"></span>
   </label>
 <!--  <p>{{this.$store.state.switchState}}</p>-->
@@ -12,10 +12,6 @@
 <script>
 export default {
   props: {
-    disabled: {
-      type: Boolean,
-      default: false
-    },
 
     labelEnableText: {
       type: String,
